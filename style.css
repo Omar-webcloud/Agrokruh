@@ -1,0 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+*{
+    font-family: "Manrope", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "ArticulatCF-DemiBold";
+    src: url(fonts/ArticulatCF-DemiBold.otf) format("opentype");
+}
+@font-face {
+    font-family: "ArticulatCF-Medium";
+    src: url(fonts/ArticulatCF-Medium.otf) format("opentype");
+}
