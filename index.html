@@ -1,104 +1,823 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-
     <title>Agrokruh</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
+
 <body>
-    <!-- hero -->
-     <section class="hero">
-        <nav class="navbar">
-
-            <img src="assets/logo-AGROKRUH.png" alt="Agrokruh logo" class="logo">
-
-           <div class="nav-menu-container">
-            <ul class="nav-menu">
-            <li><img src="assets/stone-dot.png" alt="">vízia</li>
-            <li class="dropdown"><img src="assets/stone-dot.png" alt=""> produkty <img src="assets/down-sign.png" alt="" class="down-sign">
-                <div class="dropdown-menu">
-                    <div class="dropdown-content products-dropdown">
-                        <div class="dropdown-box product-box-1">
-                            <div class="first-content">
-                                <p>VEĽKÁ FARMA</p>
-                                <button class="side-arrow"><img src="assets/side-arrow.png" alt=""></button>
-                            </div>
-                            <div class="second-content">Podnikové<br>poľnohospodárstvo</div>
-                        </div>
-                        <div class="dropdown-box product-box-2">
-                            <div class="first-content">
-                                <p>MALÁ FARMA</p>
-                                <button class="side-arrow"><img src="assets/side-arrow.png" alt=""></button>
-                            </div>
-                            <div class="second-content">Osobná & komunitná<br>produkcia</div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="dropdown"><img src="assets/stone-dot.png" alt=""> TECHNOLÓGIA <img src="assets/down-sign.png" alt="" class="down-sign">
-                <div class="dropdown-menu">
-                    <div class="dropdown-content tech-dropdown">
-                        <div class="dropdown-box tech-box">
-                            <div class="first-content">
-                                <p>BENEFITY</p>
-                                <button class="side-arrow"><img src="assets/side-arrow.png" alt=""></button>
-                            </div>
-                            <div class="second-content">Nová éra<br>poľnohospodárstva</div>
-                        </div>
-                        <div class="dropdown-box tech-box">
-                            <div class="first-content">
-                                <p>AKO TO FUNGUJE</p>
-                                <button class="side-arrow"><img src="assets/side-arrow.png" alt=""></button>
-                            </div>
-                            <div class="second-content">Revolučné obrábanie<br>pôdy bez traktora</div>
-                        </div>
-                        <div class="dropdown-box tech-box">
-                            <div class="first-content">
-                                <p>NÁSTROJE</p>
-                                <button class="side-arrow"><img src="assets/side-arrow.png" alt=""></button>
-                            </div>
-                            <div class="second-content">Regenerácia pôdy<br>v praxi</div>
-                        </div>
-                        <div class="dropdown-box tech-box">
-                            <div class="first-content">
-                                <p>PLODINY</p>
-                                <button class="side-arrow"><img src="assets/side-arrow.png" alt=""></button>
-                            </div>
-                            <div class="second-content">Čo všetko môžem<br>pestovať</div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li><img src="assets/stone-dot.png" alt=""> BLOG </li>
-            <li><img src="assets/stone-dot.png" alt=""> FAQ </li>
-            <li><img src="assets/stone-dot.png" alt=""> KONTAKT </li>
-           
-           </ul>
-
-           <div class="lang-btn">
-            <button class="sk">SK</button>
-            <button class="en">EN</button>
-           </div>
-           </div>
-        </nav>
-
-        <div class="hero-content">
-            <h1 class="hero-title">Návrat ku koreňom.</h1>
-
-            <div class="hero-details">
-                <p class="hero-para">Agrokruh je revolučná poľnohospodárska inovácia, ktorá vďaka rotujúcemu ramenu 
-šetrí až 70 % manuálnej práce. Automatizácia je k prírode a funguje bez chémie a ťažkej techniky.</p>
-
-            <div class="hero-btn">
-                <button class="yellow-btn"><img src="assets/black-dot.png" alt=""> ako to funguje</button>
-                <button class="white-btn"><img src="assets/white-dot.png" alt=""> Mám otázku</button>
+    <header>
+        <nav class="nav">
+            <div class="logo-wrapper">
+                <img class="logo-1" src="./assets/primary-logo-AGROKRUH.svg" alt="logo" class="logo default-logo">
+                <img class="logo-2" src="./assets/Group (3).svg" alt="logo" class="logo alt-logo">
             </div>
 
+
+            <div class="nav-items">
+
+                <div class="nav-item">
+                    <a class="vizia" href="">VÍZIA</a>
+                    <a class="produkty" href="">PRODUKTY <svg class="svg-1" width="12" height="5" viewBox="0 0 13 7" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.3203 0.384033L6.32031 5.38403L0.320312 0.384032" stroke="#38332E" />
+                        </svg>
+                    </a>
+                    <a class="technologia-cls" href="">TECHNOLÓGIA <svg class="svg-2" width="12" height="5" viewBox="0 0 13 7"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.3203 0.384033L6.32031 5.38403L0.320312 0.384032" stroke="#38332E" />
+                        </svg>
+                    </a>
+                    <a class="blog" href="">BLOG</a>
+                    <a class="faq" href="">FAQ</a>
+                    <a class="contact" href="">KONTAKT</a>
+                </div>
+
+                <div class="lang-switch">
+                    <a class="lang-sk" href="">SK</a>
+                    <a class="lang-en" href="">EN</a>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <div class="dropdown-container">
+
+        <!-- produkty menu -->
+        <div class="menu produkty-menu">
+            <a class="menu-wrapper" href="">
+                <div class="menu-container bg-blue">
+                    <div class="menu-header">
+                        <h5 class="menu-subtitle">veľká farma</h5>
+                        <img src="./assets/CTA-arrow-in_color_box.svg" alt="">
+                    </div>
+                    <p class="menu-title">Podnikové poľnohospodárstvo</p>
+                </div>
+            </a>
+            <a class="menu-wrapper" href="">
+                <div class="menu-container bg-yellow">
+                    <div class="menu-header">
+                        <h5 class="menu-subtitle">Malá farma</h5>
+                        <img src="./assets/CTA-arrow-in_color_box.svg" alt="">
+                    </div>
+                    <p class="menu-title">Osobná & komunitná produkcia</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- Technológia menu -->
+        <div class="menu technologia-menu">
+            <a class="menu-wrapper" href="">
+                <div class="menu-container">
+                    <div class="menu-header">
+                        <h5 class="menu-subtitle">benefity</h5>
+                        <img src="./assets/CTA-arrow-in_color_box.svg" alt="">
+                    </div>
+                    <p class="menu-title">Nová éra poľnohopodárstva</p>
+                </div>
+            </a>
+            <a class="menu-wrapper" href="">
+                <div class="menu-container">
+                    <div class="menu-header">
+                        <h5 class="menu-subtitle">ako to funguje</h5>
+                        <img src="./assets/CTA-arrow-in_color_box.svg" alt="">
+                    </div>
+                    <p class="menu-title">Revolučné obrábanie pôdy bez traktora</p>
+                </div>
+            </a>
+            <a class="menu-wrapper" href="">
+                <div class="menu-container">
+                    <div class="menu-header">
+                        <h5 class="menu-subtitle">nÁSTROJE</h5>
+                        <img src="./assets/CTA-arrow-in_color_box.svg" alt="">
+                    </div>
+                    <p class="menu-title">Regenerácia pôdy v praxi</p>
+                </div>
+            </a>
+            <a class="menu-wrapper" href="">
+                <div class="menu-container">
+                    <div class="menu-header">
+                        <h5 class="menu-subtitle">plodiny</h5>
+                        <img src="./assets/CTA-arrow-in_color_box.svg" alt="">
+                    </div>
+                    <p class="menu-title">Čo všetko môžem pestovať</p>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+
+
+
+
+    <main>
+
+
+        <section class="hero">
+            <div class="hero-container">
+                <div class="title-div">
+                    <h1 class="hero-title">Návrat ku koreňom.</h1>
+                </div>
+                <div class="hero-btn">
+                    <p class="hero-para">Agrokruh je revolučná poľnohospodárska inovácia, ktorá vďaka rotujúcemu ramenu
+                        šetrí až 70 % manuálnej práce. Automatizácia je k prírode a funguje bez chémie a ťažkej
+                        techniky.</p>
+                    <div class="btn-divs">
+                        <a class="btn" href="">ako to funguje</a>
+                        <a class="tag" href="">Mám otázku</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Efektivne section -->
+        <section>
+            <div class="efectiv-container">
+                <div class="btn-div">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                </div>
+                <div class="scroll-container">
+
+                    <div class="scroll-track">
+                        <div class="scroll-card active">
+                            <div class="card-title-wrap">
+                                <h3 class="scroll-title">Efektívne, bez chémie a ťažkej techniky. Agrokruh je revolučná
+                                    technológia, ktorá
+                                    automatizuje
+                                    prácu na poli a je šetrná k prírode.</h3>
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="scroll-content">
+                                <p class="nasa-description">pNaša technológia pomáha predchádzať erózii pôdy, šetrí vodu, obnovuje
+                                    prirodzený
+                                    mikrobióm a
+                                    podporuje biodiverzitu. Žiadne monokultúry – len zdravá, pestrá a živá pôda. Všetko
+                                    vďaka
+                                    jednému ramenu.</p>
+                                <a class="read-more" href="">Prečítajte si viac</a>
+                            </div>
+                        </div>
+
+                        <div class="scroll-card">
+                            <div class="card-title-wrap">
+                                <h3 class="scroll-title">Moderným spôsobom pestovania človek ušetrí až 70  % manuálnej
+                                    práce. Menej času stráveného na poli, viac priestoru na oddych či rozvoj farmy.</h3>
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="scroll-content">
+                                <p class="nasa-description">Automatizovaná technológia preberá väčšinu manuálnej práce. Zeleninu,
+                                    bylinky aj kvety tak možno pestovať efektívne – s minimálnou námahou a maximálnou
+                                    presnosťou. Menej driny a viac času na to podstatné.</p>
+                                <a class="read-more" href="">Prečítajte si viac</a>
+                            </div>
+                        </div>
+
+                        <div class="scroll-card">
+                            <div class="card-title-wrap">
+                                <h3 class="scroll-title">Podľa OSN máme už len 60 úrodných cyklov. Potom bude pôda
+                                    vyčerpaná. Riešenie? Agrokruh. Technológia, ktorá pôdu regeneruje a uchováva jej
+                                    úrodnosť.</h3>
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="scroll-content">
+                                <p class="nasa-description">Z pôdy berieme priveľa. Vďaka Agrokruhu jej vrátime, čo chýba.
+                                    Regeneruje, oživuje, chráni a obnovuje prirodzenú rovnováhu. Nie silou, ale
+                                    systémom, ktorý myslí na budúcnosť.</p>
+                                <a class="read-more" href="">Prečítajte si viac</a>
+                            </div>
+                        </div>
+
+                        <div class="scroll-card">
+                            <div class="card-title-wrap">
+                                <h3 class="scroll-title">Agrokruh zlepšuje štruktúru pôdy – až 70 % pôdnych agregátov
+                                    dosahuje vysokú agronomickú hodnotu. Pri konvenčnom obrábaní je to len 45 %..</h3>
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="scroll-content">
+                                <p class="nasa-description">Otočné rameno vytvára podmienky, v ktorých sa pôda prirodzene zlepšuje
+                                    – namiesto toho, aby sa ničila. Pôdne agregáty ostávajú pevné, pôda si drží vlhkosť
+                                    a je pripravená dať plodinám maximum.</p>
+                                <a class="read-more" href="">Prečítajte si viac</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- infinity carosel -->
+        <section class="infinity">
+            <div class="nasa-container">
+                <div class="nasa">
+                    <p class="nasa-p">NAŠA KOMUNITA</p>
+                    <div class="pre">
+                        <p class="pre-c">Pre lepšiu budúcnosť</p>
+                        <a class="pre-a" href="">Staňte sa partnerom</a>
+                    </div>
+                </div>
+
+
+
+                <div class="carosel">
+                    <div class="group">
+                        <img class="card" src="./assets/images (1) 1.svg" alt="">
+                        <img class="card" src="./assets/images 1.svg" alt="">
+                        <img class="card" src="./assets/irin-logo_mini 1 (1).svg" alt="">
+                        <img class="card" src="./assets/logo 2.svg" alt="">
+                        <img class="card" src="./assets/Vector.svg" alt="">
+                        <img class="card" src="./assets/Logo_negativne_farebne 1.svg" alt="">
+                    </div>
+
+                    <div aria-hidden="true" class="group">
+                        <img class="card" src="./assets/images (1) 1.svg" alt="">
+                        <img class="card" src="./assets/images 1.svg" alt="">
+                        <img class="card" src="./assets/irin-logo_mini 1 (1).svg" alt="">
+                        <img class="card" src="./assets/logo 2.svg" alt="">
+                        <img class="card" src="./assets/Vector.svg" alt="">
+                        <img class="card" src="./assets/Logo_negativne_farebne 1.svg" alt="">
+                    </div>
+
+                    <div aria-hidden="true" class="group">
+                        <img class="card" src="./assets/images (1) 1.svg" alt="">
+                        <img class="card" src="./assets/images 1.svg" alt="">
+                        <img class="card" src="./assets/irin-logo_mini 1 (1).svg" alt="">
+                        <img class="card" src="./assets/logo 2.svg" alt="">
+                        <img class="card" src="./assets/Vector.svg" alt="">
+                        <img class="card" src="./assets/Logo_negativne_farebne 1.svg" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- LEAF SECTION -->
+        <section>
+            <div class="leaf-container">
+                <div class="leafy-title-div">
+                    <div>
+                        <h5 class="leaf-title">PRINCÍPY</h5>
+                    </div>
+                    <div class="leafy-con">
+                        <h6 class="leafy">Budúcnosť ma tvar kruhu</h6>
+                        <h6 class="leafy"><a class="mission-link" href="">Naša misia</a></h6>
+                    </div>
+                </div>
+                <hr>
+                <div class="leaf-div">
+                    <div class="leaf-img-div">
+                        <img class="leaf-img" src="./assets/2f1e973a86e411128286dc3769b7f06ddbfabbc8.png" alt="leaf">
+                        <h4 class="regenerate regenerate-item-1">REGENERATÍVNE</h4>
+                        <h4 class="regenerate regenerate-item-2">UDRŽATEĽNÉ</h4>
+                        <h4 class="regenerate regenerate-item-3">ECOLOGICKE</h4>
+                    </div>
+                    <h1 class="pestu">Pestujte s technológiou, ktorá šetrí vás aj prírodu</h1>
+                    <p class="vdaka">Vďaka našej technológii si pestujete zeleninu, bylinky a kvety bez ťažkej techniky,
+                        chemických
+                        vstupov či ničenia pôdy. Agrokruh znamená viac života v pôde – a viac živín na tanieri.</p>
+                    <a class="zistit" href="">ZISTIŤ VIAC</a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- 24ton section -->
+        <section>
+            <div class="scroll-container-main-3">
+                <div class="scrol-track-3-main">
+
+                    <div class="slide-track">
+                        <div class="scroll-container-3">
+                            <div class="twenty-four-container">
+                                <div class="twenty-four">
+                                    <div class="leafy-title-div leafy-title-div-2">
+                                        <div>
+                                            <h5 class="leaf-title">agrokruh</h5>
+                                        </div>
+                                        <div class="leafy-con">
+                                            <h6 class="leafy">Výskumné štúdie</h6>
+                                            <h6 class="leafy"><a class="tech-link" href="">Technológia</a></h6>
+                                        </div>
+                                    </div>
+                                    <div class="img-content-div"> <img class="image-seventy"
+                                            src="./assets/section-7_1_Animation.svg" alt="">
+                                        <div class="content-div">
+                                            <h1 class="seventy">24 ton</h1>
+                                            <p class="parca">Na ploche len 2,2 ha viete ročne dopestovať až 24 ton
+                                                pestrej
+                                                sezónnej zeleniny. Všetko v rytme prírody, bez plytvania a s dôrazom na
+                                                kvalitu. Každý meter pôdy tu pracuje efektívne, šetrne a s maximálnym
+                                                výnosom.</p>
+                                            <div class="arrow-btn-div"> <a class="zistit btn-v1" href="">zistiť viac</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <svg width="1370" height="1" viewBox="0 0 1370 1" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <line y1="0.5" x2="1370" y2="0.5" stroke="#38332E" />
+                                </svg>
+
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="scroll-container-3 bg-slide-green">
+                            <div class="twenty-four-container">
+                                <div class="twenty-four">
+                                    <div class="leafy-title-div leafy-title-div-2">
+                                        <div>
+                                            <h5 class="leaf-title">agrokruh</h5>
+                                        </div>
+                                        <div class="leafy-con">
+                                            <h6 class="leafy">Výskumné štúdie</h6>
+                                            <h6 class="leafy"><a href="">Technológia</a></h6>
+                                        </div>
+                                    </div>
+                                    <div class="img-content-div"> <img class="image-seventy"
+                                            src="./assets/section-7_2_Animation.svg" alt="">
+                                        <div class="content-div">
+                                            <h1 class="seventy">70 %</h1>
+                                            <p class="parca"> Práca na poli už nemusí byť pre vás drina. Automatizované
+                                                rameno našej technológie zvládne väčšinu fyzickej práce za vás a zníži
+                                                tak
+                                                manuálnu záťaž až o 70 %. Pestujte efektívne, múdro a s ľahkosťou. </p>
+                                            <div class="arrow-btn-div"> <a class="zistit btn-v2" href="">zistiť viac</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <svg width="1370" height="1" viewBox="0 0 1370 1" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <line y1="0.5" x2="1370" y2="0.5" stroke="#38332E" />
+                                </svg>
+
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="scroll-container-3 bg-slide-lime">
+                            <div class="twenty-four-container">
+                                <div class="twenty-four">
+                                    <div class="leafy-title-div leafy-title-div-2">
+                                        <div>
+                                            <h5 class="leaf-title">agrokruh</h5>
+                                        </div>
+                                        <div class="leafy-con">
+                                            <h6 class="leafy">Výskumné štúdie</h6>
+                                            <h6 class="leafy"><a href="">Technológia</a></h6>
+                                        </div>
+                                    </div>
+                                    <div class="img-content-div"> <img class="image-seventy"
+                                            src="./assets/section-7_3_Animation.svg" alt="">
+                                        <div class="content-div">
+                                            <h1 class="seventy">4×</h1>
+                                            <p class="parca">Agrokruh šetrí energiu. Tú vašu, ale aj elektrickú.
+                                                Energetická
+                                                spotreba je až štyrikrát nižšia než pri traktore. Ide tak o úsporné
+                                                riešenie
+                                                pre skutočne moderné poľnohospodárstvo.</p>
+                                            <div class="arrow-btn-div"> <a class="zistit btn-v3" href="">zistiť viac</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <svg width="1370" height="1" viewBox="0 0 1370 1" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <line y1="0.5" x2="1370" y2="0.5" stroke="#38332E" />
+                                </svg>
+
+                            </div>
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="scroll-container-3 bg-slide-green-alt">
+                            <div class="twenty-four-container">
+                                <div class="twenty-four">
+                                    <div class="leafy-title-div leafy-title-div-2">
+                                        <div>
+                                            <h5 class="leaf-title">agrokruh</h5>
+                                        </div>
+                                        <div class="leafy-con">
+                                            <h6 class="leafy">Výskumné štúdie</h6>
+                                            <h6 class="leafy"><a href="">Technológia</a></h6>
+                                        </div>
+                                    </div>
+                                    <div class="img-content-div"> <img class="image-seventy"
+                                            src="./assets/section-7_4_Animation.svg" alt="">
+                                        <div class="content-div">
+                                            <h1 class="seventy">60×</h1>
+                                            <p class="parca">OSN varuje, že ak nezmeníme spôsob, akým zaobchádzame s
+                                                pôdou,
+                                                zostáva nám už len 60 úrodných cyklov. Ak chceme zachovať úrodnosť pre
+                                                budúce generácie, musíme konať dnes.</p>
+                                            <div class="arrow-btn-div"> <a class="zistit btn-v4" href="">zistiť viac</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <svg width="1370" height="1" viewBox="0 0 1370 1" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <line y1="0.5" x2="1370" y2="0.5" stroke="#38332E" />
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="arrow-div">
+                        <img class="arrow right-arrow" src="./assets/Group 5150.svg" alt="Next Slide">
+                        <img class="arrow left-arrow" src="./assets/Group 5151.svg" alt="Previous Slide">
+                    </div>
+                    <!-- Custom bullets -->
+                    <div class="cust-bullet">
+                        <div class="bullet"></div>
+                        <div class="bullet"></div>
+                        <div class="bullet"></div>
+                        <div class="bullet"></div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+
+        </section>
+
+
+
+
+        <!-- technologia produckty section -->
+        <section class="technologia">
+            <div class="technologia-container">
+                <div class="tech-btn-wrap">
+                    <button class="tech-switch-btn">technológia</button>
+                    <button class="tech-switch-btn">NOVINKY</button>
+                    <button class="tech-switch-btn">PRODUKTY</button>
+                    <button class="tech-switch-btn">NAŠA MISIA</button>
+                    <button class="tech-switch-btn">KOMUNITA</button>
+                </div>
+
+                <div class="tech-scroll-container">
+
+                    <div class="tech-scroll-track">
+
+                        <div class="tech-scroll-card">
+                            <div class="scroll-card">
+                                <h3 class="tech-card-title">Jedno rameno, niekoľko funkcií. Naša technológia zvládne
+                                    väčšinu
+                                    poľnohospodárskych operácií. Všetko šetrne, efektívne a automatizovane.</h3>
+                                <div class="scroll-content">
+                                    <p class="nasa-description">Technológia obrába pôdu bez potreby traktora. Nenarušuje jej
+                                        štruktúru,
+                                        nezhutňuje ju  a podporuje jej prirodzenú regeneráciu. </p>
+                                    <div class="tech-btn-container">
+                                        <a class="zistit" href="">zistiť viac</a>
+                                        <a class="how-link" href="">Ako to funguje</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ag-vel">
+                                <p class="agrokruh ag-label">agrokruh</p>
+                                <p class="velka vel-label">Revolúcia v poľnohospodárstve</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="tech-scroll-card">
+                            <div class="scroll-card ">
+                                <h3 class="tech-card-title">„Ako lekárka viem, že nezáleží len na tom, aké potraviny
+                                    konzumujeme,  ale aj na tom, ako boli dopestované. Agrokruh umožňuje dopestovať
+                                    plnohodnotnú výživnú zeleninu bez chemickej záťaže.“</h3>
+                                <div class="scroll-content">
+                                    <p class="nasa-description">Zmena nezačne sama od seba. Potrebuje slová, myšlienky a činy,
+                                        ktoré ju
+                                        posúvajú vpred. Píšeme o tom, čo má zmysel.</p>
+                                    <div class="tech-btn-container">
+                                        <a class="zistit" href="">čítať blog</a>
+                                        <a class="how-link" href="">Newsletter</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ag-vel">
+                                <p class="agrokruh ag-label">blog</p>
+                                <p class="velka vel-label">Zuzana Vetešková Andreánska, AGROKRUH</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="tech-scroll-card">
+                            <div class="scroll-card ">
+                                <h3 class="tech-card-title">Malí farmári, komunitné záhrady aj nadšenci domáceho
+                                    pestovania
+                                    nájdu v Agrokruhu spoľahlivého partnera. Začnite aj vy pestovať udržateľne a šetrne
+                                    k
+                                    pôde.</h3>
+                                <div class="scroll-content">
+                                    <p class="nasa-description">Premyslené riešenie pre menších pestovateľov. Agrokruh sa
+                                        prispôsobí
+                                        vašej pôde, tempu aj vízii. Aj malá farma vie priniesť veľkú úrodu.</p>
+                                    <div class="tech-btn-container">
+                                        <a class="zistit" href="">malá farma</a>
+                                        <a class="how-link" href="">Produkty</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ag-vel">
+                                <p class="agrokruh ag-label">malá farma</p>
+                                <p class="velka vel-label">Malá farma, veľký potenciál</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="tech-scroll-card">
+                            <div class="scroll-card ">
+                                <h3 class="tech-card-title">
+                                    „Zelenina ako zdraviu prospešná  a nenahraditeľná zložka výživy  človeka nesmie byť pestovaná
+                                    s použitím jedov, hrubej sily a bezcitnej vypočítavosti.“</h3>
+                                <div class="scroll-content">
+                                    <p class="nasa-description">Pestovať bez chémie neznamená krok späť, ale návrat k tomu, čo dáva
+                                        skutočný zmysel. Zmysel pre zdravie, prírodu aj budúcnosť.</p>
+                                    <div class="tech-btn-container">
+                                        <a class="zistit" href="">zistiť viac</a>
+                                        <a class="how-link" href="">Zakladateľ</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ag-vel">
+                                <p class="agrokruh ag-label">Naša misia</p>
+                                <p class="velka vel-label">Janko Šlinský, AGROKRUH</p>
+                            </div>
+                        </div>
+
+                        <div class="tech-scroll-card">
+                            <div class="scroll-card ">
+                                <h3 class="tech-card-title">
+                                    „Komunita ako zdraviu prospešná  a nenahraditeľná zložka výživy  človeka nesmie byť pestovaná
+                                    s použitím jedov, hrubej sily a bezcitnej vypočítavosti.“</h3>
+                                <div class="scroll-content">
+                                    <p class="nasa-description">Pestovať bez chémie neznamená krok späť, ale návrat k tomu, čo dáva
+                                        skutočný zmysel. Zmysel pre zdravie, prírodu aj budúcnosť.</p>
+                                    <div class="tech-btn-container">
+                                        <a class="zistit" href="">zistiť viac</a>
+                                        <a class="how-link" href="">Zakladateľ</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ag-vel">
+                                <p class="agrokruh ag-label">Nsašaa misia</p>
+                                <p class="velka vel-label">Jankoo Šlinský, AGROKRUH</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <!-- vegetable section -->
+        <section>
+            <div class="vegetable">
+                <div class="leafy-title-div leafy-title-div-2">
+                    <div>
+                        <h5 class="leaf-title">PESTOVANIE</h5>
+                    </div>
+                    <div class="leafy-con">
+                        <h6 class="leafy">50 plodín</h6>
+                        <h6 class="leafy leafy-2"><a href="">Zoznam plodín</a></h6>
+                    </div>
+                </div>
+                <div class="veg-1">
+                    <div class="veg-container">
+                        <div class="veg-image">
+                            <img data-name="Tomato" src="./assets/section-10_image_Paradajky-4.png" alt="">
+                            <img data-name="Chilli" src="./assets/section-10_image_Hrach-7.png" alt="">
+                            <img data-name="cabbage" src="./assets/cabbage.png" alt="">
+                            <img data-name="onion" src="./assets/onion.png" alt="">
+                            <img data-name="capcicum" src="./assets/capcicum.png" alt="">
+                            <img data-name="carrot" src="./assets/carrot.png" alt="">
+                            <img data-name="cucumber" src="./assets/cucumber.png" alt="">
+                            <img data-name="potato" src="./assets/potato.png" alt="">
+                            <img data-name="hotOnion" src="./assets/hot-onion.png" alt="">
+                        </div>
+
+                        <div class="head-veg">
+                            <h3 class="scroll-name">z pôdy na tanier</h3>
+                            <div class="veg-scroll-container">
+                                <div class="swiper veg-scroll" id="vegScroll">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide" data-name="Tomato">Tomato</div>
+                                        <div class="swiper-slide" data-name="Chilli">Chilli</div>
+                                        <div class="swiper-slide" data-name="cabbage">Cabbage</div>
+                                        <div class="swiper-slide active" data-name="onion">onion</div>
+
+                                        <div class="swiper-slide" data-name="capcicum">Capcicum</div>
+
+                                        <div class="swiper-slide" data-name="cucumber">Cucumber</div>
+                                        <div class="swiper-slide" data-name="carrot">Carrot</div>
+                                        <div class="swiper-slide" data-name="potato">potato</div>
+                                        <div class="swiper-slide" data-name="hotOnion">Hot Onion</div>
+                                        <div class="swiper-slide" data-name="Chilli">Chilli</div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="vype">
+                                <p class="vype-text">Vypestujte si až 50 druhov chutí. Vaša úroda s Agrokruhom bude rásť
+                                    v v súlade prírodou.</p>
+                                <a class="leafy leafy-3" href="">Zoznam plodín</a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!-- potato -->
+        <section class="potato">
+            <div class="potato-container ">
+                <div class="header-flex-row">
+                    <p class="agrokruh">agrokruh</p>
+                    <p class="velka">Veľká a Malá farma</p>
+                </div>
+                <div>
+                    <h1 class="tech">Technológia, ktorá pestuje budúcnosť.</h1>
+                </div>
+
+                <svg width="1240" height="1" viewBox="0 0 1240 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line y1="0.5" x2="1240" y2="0.5" stroke="#E7FD83" />
+                </svg>
+
+                <div class="para-div">
+                    <p class="para">Vďaka Agrokruhu inovatívne vypestujete zeleninu, bylinky a kvety. A navyše –
+                        obnovujete pôdu,
+                        živíte komunitu a vraciate prírode to, čo jej patrí.</p>
+                    <div class="btn-divs btns">
+                        <a class="btn btnn" href="">produkty</a>
+                        <a class="tag tag-1" href="">Mám otázku</a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-1">
+                <div class="footer-col">
+                    <h6><a href="">Vízia</a></h6>
+                    <a href="">Naša misia</a>
+                    <a href="">Produkcia</a>
+                    <a href="">Vývoj</a>
+                    <a href="">Autor systému</a>
+                </div>
+                <div class="footer-col">
+                    <h6><a href="">produkty</a></h6>
+                    <a href="">Veľká farma</a>
+                    <a href="">Malá farma</a>
+                </div>
+
+                <div class="footer-col">
+                    <h6><a href="">technológia</a></h6>
+                    <a href="">Benefity</a>
+                    <a href="">Systém</a>
+                    <a href="">Nástroje</a>
+                    <a href="">Plodiny</a>
+                </div>
+
+                <div class="footer-col">
+                    <h6><a href="">blog</a></h6>
+                    <a href="">Pestovanie</a>
+                    <a href="">Kulinári</a>
+                    <a href="">Farmári</a>
+                    <a href="">Praktické rady</a>
+                    <a href="">Výskum</a>
+                    <a href="">Zdravie</a>
+                </div>
+
+                <div class="footer-col">
+                    <h6><a href="">faq</a></h6>
+                    <a href="">Technológia</a>
+                    <a href="">Pestovanie</a>
+                    <a href="">Plánovanie</a>
+                    <a href="">Vízia</a>
+                </div>
+
+                <div class="footer-col">
+                    <h6><a href="">kontakt</a></h6>
+                    <a href="">Formulár</a>
+                    <a href="">Naša komunita</a>
+                </div>
+            </div>
+
+            <div class="footer-2">
+                <div class="footer-news">
+                    <h4>Newsletter s vôňou pôdy</h4>
+                    <div>
+                        <div class="text-div">
+                            <input class="text" type="text" placeholder="Meno*">
+                            <input class="text text-1" type="text" placeholder="Priezvisko*">
+                        </div>
+                        <div class="input-wrap">
+                            <input class="text text-2" type="email" placeholder="Váš e-mail*">
+                            <button class="send-btn">odoberať</button>
+                        </div>
+                        <label class="terms-check">
+                            <input class="checkbox" type="checkbox">
+                            <span class="custom-bullet"></span>
+                            <span class="terms">*Odoslaním mojej emailovej adresy súhlasím s jej spracúvaním na
+                                posielanie Newslettra emailom. Viac informácií v sekcii <a href="">Zásady spracúvania
+                                    osobných údajov.</a></span>
+                        </label>
+
+
+
+                    </div>
+                </div>
+
+                <div class="footer-news-content">
+                    <div class="icons-div">
+                        <div class="icons">
+                            <a href=""><img src="./assets/Vector (1).svg" alt=""></a>
+                            <a href=""><img src="./assets/Group (2).svg" alt=""></a>
+                            <a href=""><img src="./assets/Vector (3).svg" alt=""></a>
+                            <a href=""><img src="./assets/Group.svg" alt=""></a>
+                        </div>
+                        <div class="sk-en">
+                            <a class="sk" href="">SK</a>
+                            <a class="sk en" href="">EN</a>
+                        </div>
+                    </div>
+                    <div class="footer-brand-wrap">
+                        <div class="logo"><img src="./assets/zakladne-logo-AGROKRUH.svg" alt=""></div>
+                        <div class="copyright">created by <img src="./assets/logo_boomex.svg" alt=""> </div>
+                        <div class="copyright">©2025 Agrokruh</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <a href="">Podmienky používania</a>
+                <a href="">Ochrana osobných údajov</a>
+                <a href="">Súhlas na marketingové oslovovanie</a>
+                <a href="">Zásady využívania cookies</a>
+                <a href="">Nastavenia cookies</a>
             </div>
         </div>
-     </section>
-    
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+
+
+
+
+    <script src="./script.js"></script>
+
 </body>
+
 </html>
