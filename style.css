@@ -17,7 +17,7 @@
 }
 
 .hero{
-    background: linear-gradient(#00000033, #00000033), url(assets/hero-bg.png);
+    background: linear-gradient(#00000033, #00000042), url(assets/hero-bg.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -28,6 +28,9 @@
     width: 170px;
     height: 22px;
 }
+.navbar:has(.dropdown:hover) .logo {
+    content: url(assets/black-logo-AGROKRUH.png);
+}
 .navbar{
     margin-top: 45px;
     display: flex;
@@ -35,7 +38,8 @@
     align-items: center;
     width: 1240px;
     justify-self: center;
-   
+    position: relative;
+    z-index: 20;
 }
 .nav-menu-container{
     display: flex;
@@ -145,4 +149,96 @@ display: flex;
 gap: 5px;
 align-items: center;
  cursor: pointer;
+}
+
+.dropdown {
+    padding-bottom: 20px;
+    margin-bottom: -20px;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 480px;
+    background-color: #F5F3ED;
+    padding-top: 140px;
+    list-style: none;
+    z-index: -1;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-content {
+    width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+}
+.products-dropdown {
+    justify-content: flex-end;
+}
+.tech-dropdown {
+    justify-content: space-between;
+}
+.dropdown-box {
+    border-radius: 12px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+    width: 295px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.dropdown-box:hover {
+    transform: translateY(-5px);
+}
+.product-box-1 {
+    background-color: #A5C4FF;
+}
+.product-box-2 {
+    background-color: #E7FD83;
+}
+.tech-box {
+    background-color: #CED2BB;
+}
+.first-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.first-content p {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #38332E;
+}
+.side-arrow {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: none;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+.second-content {
+    font-size: 22px;
+    font-family: "ArticulatCF-Medium", sans-serif;
+    color: #38332E;
+    line-height: 1.25;
+}
+.dropdown:hover .down-sign {
+    transform: rotate(180deg);
+}
+.down-sign {
+    transition: transform 0.3s ease;
 }
