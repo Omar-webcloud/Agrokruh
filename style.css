@@ -16,3 +16,65 @@
     src: url(fonts/ArticulatCF-Medium.otf) format("opentype");
 }
 
+.hero{
+    background: url(assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    gap: 399px;
+}
+.logo{
+    width: 170px;
+    height: 22px;
+}
+.navbar{
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1240px;
+    justify-self: center;
+   
+}
+.nav-menu-container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #38332E;
+}
+.nav-menu{
+    display: flex;
+    gap: 21px;
+    align-items: center;
+    list-style: none;
+     background-color: #ffffff; 
+     padding: 12px 27px ;
+     border-radius: 30px;
+}
+.nav-menu li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.lang-btn{
+    display: flex;
+    gap: 10px;
+     background-color: #ffffff;
+     padding: 13px 21px;
+     border-radius: 30px;
+     
+}
+.lang-btn button{
+    background-color: transparent;
+    border: none;
+}
+.en{
+font-family: "Manrope";
+font-weight: 500;
+font-style: Medium;
+font-size: 14px;
+line-height: 135%;
+text-transform: uppercase;
+color: #CED2BB;
+}
