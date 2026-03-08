@@ -17,7 +17,7 @@
 }
 
 .hero{
-    background: url(assets/hero-bg.png);
+    background: linear-gradient(#00000033, #00000033), url(assets/hero-bg.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -56,6 +56,7 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    cursor: pointer;
 }
 .lang-btn{
     display: flex;
@@ -69,6 +70,9 @@
     background-color: transparent;
     border: none;
 }
+.sk{
+     cursor: pointer;
+}
 .en{
 font-family: "Manrope";
 font-weight: 500;
@@ -77,4 +81,68 @@ font-size: 14px;
 line-height: 135%;
 text-transform: uppercase;
 color: #CED2BB;
+ cursor: pointer;
+}
+
+.hero-content{
+    justify-self: center;
+    display: flex;
+    justify-content: space-between;
+    width: 1240px;
+    margin-bottom: 150px;
+}
+.hero-title{
+    color: #E7FD83;
+    max-width: 368px;
+    font-family: "ArticulatCF-DemiBold", sans-serif;
+font-weight: 600;
+font-size: 60px;
+line-height: 110.00000000000001%;
+}
+.hero-details{
+    display: grid;
+    gap: 45px;
+    max-width: 400px;
+}
+.hero-para{
+font-weight: 500;
+font-size: 16px;
+line-height: 135%;
+letter-spacing: 0%;
+color: #FFFFFF;
+}
+.hero-btn{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+.yellow-btn{
+font-weight: 600;
+font-size: 15px;
+line-height: 140%;
+letter-spacing: 0%;
+text-transform: uppercase;
+color: #38332E;
+padding-bottom: 14.5px;
+padding-top: 14.5px;
+padding-left: 25px;
+padding-right: 30px;
+background-color: #E7FD83;
+border-radius: 30px;
+border: none;
+ cursor: pointer;
+}
+.white-btn{
+font-weight: 600;
+font-size: 15px;
+line-height: 150%;
+letter-spacing: 0%;
+color: #FFFFFF;
+background: transparent;
+border: none;
+border-bottom: 1px solid #FFFFFF;
+display: flex;
+gap: 5px;
+align-items: center;
+ cursor: pointer;
 }
