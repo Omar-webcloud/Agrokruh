@@ -888,7 +888,7 @@ position: absolute;
 left: 0;
 right: 0;
 }
-.twenty-four{
+.twenty-four-container{
     background-color: #A5C4FF;
 }
 .tech-link{
@@ -940,4 +940,69 @@ color: #38332E;
     background-color: #FFFFFF;
     position: relative;
     top: 65px;
+}
+
+       /* technologia */
+
+.technologia{
+    background-color: #F5F3ED;
+    padding-top: 70px;
+}
+.technologia-container{
+    width: 1240px;
+    justify-self: center;
+}
+.tech-switch-btn{
+    font-family: var(--font-manrope);
+font-weight: 600;
+font-size: 15px;
+line-height: 140%;
+letter-spacing: 0%;
+text-align: center;
+text-transform: uppercase;
+color: #38332E;
+border: 1px solid #38332E;
+border-radius: 30px;
+padding: 14px 29px ;
+}
+.tech-switch-btn.active{
+    background-color: #38332E;
+    color: #FFFFFF;
+
+}
+.tech-btn-wrap{
+    margin-bottom: 90px;
+    justify-self: left;
+    display: flex;
+    gap: 10px;
+   
+}
+.tech-card-title{
+    font-family: var(--font-articulate-md);
+font-weight: 500;
+font-size: 40px;
+color: #38332E;
+line-height: 120%;
+letter-spacing: 0%;
+
+}
+.scroll-card{
+
+}
+.ag-vel{
+    margin-top: 150px;
+}
+.tech-btn-container{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+.how-link{
+    text-decoration: none;
+    color:#38332E ;
+    font-family: var(--font-manrope);
+font-weight: 600;
+font-size: 15px;
+line-height: 150%;
+letter-spacing: 0%;
 }
