@@ -728,3 +728,159 @@ letter-spacing: 0%;
     transform: translateX(-100%);
   }
 }
+
+
+              /* leaf */
+.leaf-container{
+    padding-bottom: 70px;
+    margin-bottom: 20px;
+}
+
+.leafy-title-div{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    display: flex;
+    width: 1240px;
+    align-items: center;
+    justify-self: center;
+    justify-content: space-between;
+}
+.leafy-con{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 504px;
+}
+.leaf-title{
+    color: #38332E;
+    font-family: var(--font-manrope);
+font-weight: 500;
+font-size: 18px;
+line-height: 120%;
+letter-spacing: 0%;
+text-transform: uppercase;
+}
+.leafy{
+    font-family: var(--font-manrope);
+font-weight: 500;
+color: #38332E;
+font-size: 16px;
+line-height: 135%;
+letter-spacing: 0%;
+}
+.mission-link{
+    font-family: var(--font-manrope);
+font-weight: 600;
+font-size: 15px;
+line-height: 150%;
+letter-spacing: 0%;
+color: #38332E;
+text-decoration: none;
+border-bottom: 1px solid #38332E;
+}
+.mission-link::before{
+    content: url(assets/black-dot-2.png);
+    padding-right: 5px;
+}
+.leaf-img-div{
+    justify-self: center;
+    position: relative;
+}
+.leaf-img{
+    justify-self: center;
+    width: 633px;
+}
+.leaf-div{
+    justify-self: center;
+}
+.leaf-div h4{
+    font-family: var(--font-articulate-md);
+font-weight: 500;
+font-size: 25px;
+line-height: 120%;
+letter-spacing: 0%;
+color: #38332E;
+position: absolute;
+}
+.regenerate-item-1{
+    top: 15%;
+    right: 73%;
+}
+.regenerate-item-1::after{
+    content: url(assets/black-dot.png);
+    padding-right: 5px;
+    position: absolute;
+        top: -2px;
+    right: -11%;
+}
+.regenerate-item-2{
+    top: 29%;
+    right: -2%;
+}
+.regenerate-item-2::before{
+    content: url(assets/black-dot.png);
+    padding-right: 5px;
+    position: absolute;
+        top: -2px;
+    left: -11%;
+}
+.regenerate-item-3{
+    bottom: 27%;
+    right: 4%;
+}
+.regenerate-item-3::before{
+    content: url(assets/black-dot.png);
+    padding-right: 5px;
+    position: absolute;
+        top: -2px;
+    left: -11%;
+}
+.pestu{
+    font-family: var(--font-articulate);
+font-weight: 600;
+font-size: 60px;
+line-height: 110%;
+letter-spacing: 0%;
+text-align: center;
+color: #38332E;
+width: 863px;
+text-align: center;
+justify-self: center;
+position: relative;
+top: -50px;
+}
+.vdaka{
+    font-family: var(--font-manrope);
+font-weight: 500;
+font-size: 16px;
+line-height: 135%;
+letter-spacing: 0%;
+text-align: center;
+width: 715px;
+justify-self: center;
+color: #38332E;
+margin-bottom: 45px;
+}
+.zistit{
+    font-family: var(--font-manrope);
+font-weight: 600;
+font-size: 15px;
+line-height: 140%;
+letter-spacing: 0%;
+text-transform: uppercase;
+color: #38332E;
+background-color: #A5C4FF;
+border: none;
+border-radius: 30px;
+padding: 15px 30px 15px 25px;
+text-decoration: none;
+justify-self: center;
+position: absolute;
+left: 0;
+right: 0;
+}
+
+.zistit::before{
+    content: url(assets/black-dot.png);
+    padding-right: 10px;
+}
