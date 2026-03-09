@@ -23,7 +23,7 @@
 
 @font-face {
     font-family: "Articulate_CF", sans-serif;
-    src: url('./assets/fonnts.com-Articulat_CF_Regular.otf');
+    src: url('fonts/ArticulatCF-DemiBold.otf') format(opentype);
 }
 
 * {
@@ -306,10 +306,16 @@ nav {
 
 .lang-sk {
     color: var(--font-root-color);
+    text-decoration: none;
+    font-size: 14px;
+    font-family: var(--font-manrope);
 }
 
 .lang-en {
     color: var(--font-secondary-color) !important;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: var(--font-manrope);
 }
 
 
@@ -498,9 +504,9 @@ nav {
     animation: disappear-reappear-out 0.8s ease forwards;
 }
 
-.tag:hover::after {
+/* .tag:hover::after {
     animation: disappear-reappear-in 0.8s ease forwards;
-}
+} */
 
 @keyframes disappear-reappear-in {
     0% {
