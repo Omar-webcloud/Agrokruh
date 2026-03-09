@@ -644,3 +644,72 @@ letter-spacing: 0%;
     content: url(assets/black-dot-2.png);
     padding-right: 5px;
 }
+
+
+
+
+
+
+
+           /* infinity */
+
+.infinity{
+    background-color: #F5F3ED;
+    padding-top: 47px;
+    padding-bottom: 67px;
+}
+.nasa{
+    justify-self: center;
+    display: flex;
+    justify-content: space-between;
+    width: 1240px;
+    align-items: center;
+}
+.pre{
+    width: 505px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nasa-p{
+    font-family: var(--font-manrope);
+font-weight: 500;
+font-size: 18px;
+line-height: 120%;
+letter-spacing: 0%;
+text-transform: uppercase;
+color: #38332E;
+}
+.pre-a{
+    text-decoration: none;
+    color: #38332E;
+    font-family: var(--font-manrope);
+font-weight: 600;
+font-size: 15px;;
+line-height: 150%;
+letter-spacing: 0%;
+border-bottom: 1px solid #38332E;
+}
+.pre-c{
+    color: #38332E;
+    font-family: var(--font-manrope);
+font-weight: 500;
+font-size: 16px;
+line-height: 135%;
+letter-spacing: 0%;
+}
+.carosel{
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 25px;
+    align-items: center;
+    overflow-x: hidden;
+    width: 100%;
+}
+.group{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 25px;
+}
