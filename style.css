@@ -4,6 +4,7 @@
 :root {
     --font-manrope: "Manrope", sans-serif;
     --font-articulate: "Articulate_CF", sans-serif;
+    --font-articulate-md: "Articulate-CF-medium", sans-serif;
     --font-base-weight: 400;
     --font-secondary-weight: 500;
     --font-base-size: 14px;
@@ -24,6 +25,10 @@
 @font-face {
     font-family: "Articulate_CF", sans-serif;
     src: url('fonts/ArticulatCF-DemiBold.otf') format(opentype);
+}
+@font-face {
+    font-family: "Articulate-CF-medium", sans-serif;
+    src: url('fonts/ArticulatCF-Medium.otf') format(opentype);
 }
 
 * {
@@ -564,4 +569,78 @@ nav {
     text-transform: uppercase;
     color: #FFFFFF;
     text-underline-offset: 4px;
+}
+
+
+
+                /* efectiv */
+
+.efectiv-container{
+    justify-self: center;
+    padding-top: 70px;
+    padding-bottom: 90px;
+    display: grid;
+    gap: 90px;
+}
+.btn-div{
+    max-width: 190px;
+}
+.btn-div button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #A5C4FF;
+    border: 1px solid #A5C4FF;
+    background-color: transparent;
+    font-family: var(--font-manrope);
+}
+
+.btn-div button.active{
+    color: #FFFFFF;
+    background-color: #A5C4FF;
+}
+.scroll-card{
+    display: flex;
+    gap: 125px;
+}
+.scroll-title{
+    font-family: var(--font-articulate-md);
+font-weight: 500;
+font-size: 40px;
+line-height: 120%;
+letter-spacing: 0%;
+color: #38332E;
+max-width: 715px;
+}
+.scroll-content{
+    max-width: 400px;
+    height: fit-content;
+}
+.scroll-content{
+    display: grid;
+    gap: 45px;
+}
+.nasa-description{
+    font-family: var(--font-manrope);
+font-weight: 500;
+font-size: 16px;
+line-height: 135%;
+letter-spacing: 0%;
+color: #38332E;
+height: fit-content;
+}
+.read-more{
+    color: #38332E;
+    text-decoration: none;
+    border-bottom: 1px solid #38332E;
+    max-width: fit-content;
+    font-family: var(--font-manrope);
+font-weight: 600;
+font-size: 15px;
+line-height: 150%;
+letter-spacing: 0%;
+}
+.read-more::before{
+    content: url(assets/black-dot-2.png);
+    padding-right: 5px;
 }
