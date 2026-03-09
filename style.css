@@ -874,13 +874,70 @@ border: none;
 border-radius: 30px;
 padding: 15px 30px 15px 25px;
 text-decoration: none;
-justify-self: center;
-position: absolute;
-left: 0;
-right: 0;
+
 }
 
 .zistit::before{
     content: url(assets/black-dot.png);
     padding-right: 10px;
+}
+
+.leaf-container .zistit{
+    justify-self: center;
+position: absolute;
+left: 0;
+right: 0;
+}
+.twenty-four{
+    background-color: #A5C4FF;
+}
+.tech-link{
+    border-bottom: 1px solid #38332E;
+    text-decoration: none;
+    font-family: var(--font-manrope);
+font-weight: 600;
+font-size: 15px;
+line-height: 150%;
+letter-spacing: 0%;
+color: #38332E;
+}
+.tech-link::before{
+     content: url(assets/black-dot-2.png);
+    padding-right: 5px;
+    
+}
+.img-content-div{
+    display: flex;
+    justify-content: space-between;
+    width: 1240px;
+    justify-self: center;
+    padding-top: 134px;
+    padding-bottom: 116px;
+}
+.image-seventy{
+    width: 525px;
+}
+.content-div{
+    width: 400px;
+}
+.seventy{
+    font-family: var(--font-articulate);
+font-weight: 600;
+font-size: 120px;
+line-height: 120%;
+letter-spacing: 0%;
+color: #38332E;
+}
+.parca{
+    font-family: var(--font-manrope);
+font-weight: 500;
+font-size: 16px;
+line-height: 135%;
+letter-spacing: 0%;
+color: #38332E;
+}
+.btn-v1{
+    background-color: #FFFFFF;
+    position: relative;
+    top: 65px;
 }
