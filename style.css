@@ -1469,18 +1469,18 @@ nav {
 
 
 /* Vegetable */
-
-
 .vegetable {
     max-width: 1240px;
     margin: 0 auto;
     padding: 70px 100px 53px 100px;
 }
+
 .veg-image {
     position: relative;
     width: 610px;
     height: 659px;
 }
+
 .veg-image img {
     position: absolute;
     top: 0;
@@ -1491,3 +1491,200 @@ nav {
     display: none;
     margin-top: 15%;
 }
+
+
+.head-veg {
+    position: relative;
+}
+
+.head-veg::before {
+    content: "";
+    position: absolute;
+    bottom: 423px;
+    left: 0;
+    width: 100%;
+    max-width: 505px;
+    height: 1px;
+    background-color: var(--font-root-color);
+    opacity: 1;
+}
+
+
+
+
+.veg-container {
+    display: flex;
+    gap: 125px;
+    padding-top: 115px;
+    justify-content: space-between;
+}
+
+.veg-scroll-container {
+    display: flex;
+    flex-direction: column;
+    gap: 53px;
+    width: 505px;
+    text-align: start;
+    overflow: hidden;
+    -webkit-mask-size: 100% 100%;
+    mask-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 1) 20%,
+            rgba(0, 0, 0, 1) 80%,
+            rgba(0, 0, 0, 0) 100%);
+    mask-size: 100% 100%;
+    position: relative;
+}
+
+
+
+.veg-scroll {
+    height: 450px;
+    display: flex;
+
+    gap: 30px;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+
+
+}
+
+.scroll-name {
+    font-family: var(--font-manrope);
+    font-weight: 600;
+    font-size: 30px;
+    line-height: var(--font-base-line-height);
+    letter-spacing: 0;
+    text-transform: uppercase;
+    max-width: 233px;
+    color: var(--font-root-color);
+    margin-bottom: 53px;
+}
+
+.veg-scroll .swiper-slide {
+    font-family: var(--font-articulate);
+    font-weight: var(--font-secondary-weight);
+    font-style: Medium;
+    font-size: 40px;
+    line-height: var(--font-secondary-line-height);
+    letter-spacing: 0;
+    height: 50px;
+}
+
+
+.veg-content {
+    max-width: 1240px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.veg-content-con {
+    width: 505px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.veg-p {
+    max-width: 336px;
+    font-family: var(--font-manrope);
+    font-weight: var(--font-secondary-line-height);
+    font-style: Medium;
+    font-size: 16px;
+    line-height: var(--font-secondary-line-height);
+    letter-spacing: 0;
+    color: var(--font-root-color);
+}
+
+
+
+.veg-image img.active {
+    display: block;
+}
+
+.swiper {
+    height: 450px;
+    margin: 0 !important;
+}
+
+.swiper-wrapper {
+    flex-direction: column;
+
+}
+
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px !important;
+    font-family: var(--font-articulate);
+    font-weight: var(--font-secondary-weight);
+    line-height: var(--font-base-line-height);
+    letter-spacing: 0;
+    color: var(--font-secondary-color);
+
+
+}
+
+.swiper-slide.active {
+    width: 100%;
+
+    color: var(--font-root-color);
+    position: relative;
+
+    font-family: var(--font-articulate);
+    font-weight: var(--font-secondary-weight);
+    font-style: Medium;
+    font-size: 40px;
+    line-height: var(--font-base-line-height);
+    letter-spacing: 0;
+}
+
+
+
+
+
+.vype {
+    display: flex;
+    flex-direction: column;
+    padding-top: 69px;
+    gap: 45px;
+}
+
+.vype-text {
+    font-family: var(--font-manrope);
+    font-weight: var(--font-secondary-weight);
+    font-style: Medium;
+    font-size: var(--font-third-size);
+    line-height: var(--font-secondary-line-height);
+    letter-spacing: 0;
+    color: var(--font-root-color);
+    max-width: 336px;
+}
+
+.leafy-3::before {
+    position: absolute;
+    content: "";
+    top: 30%;
+    left: -3%;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--font-root-color);
+}
+
+.leafy-3::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: -3%;
+    width: 125px;
+    height: 1px;
+    background-color: var(--font-root-color);
+}
+
+
