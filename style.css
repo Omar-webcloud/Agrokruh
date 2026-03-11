@@ -1723,3 +1723,76 @@ nav {
     gap: 90px;
     padding: 70px 100px;
 }
+.header-flex-row{
+    display: flex;
+    justify-content: space-between;
+}
+.velka {
+    width: 400px;
+    color: #E7FD83;
+    font-family: var(--font-manrope);
+font-weight: 500;
+font-size: 16px;
+line-height: 135%;
+letter-spacing: 0%;
+
+}
+.agrokruh{
+    font-family: var(--font-manrope);
+font-weight: 500;
+font-size: 18px;
+line-height: 120%;
+letter-spacing: 0%;
+text-transform: uppercase;
+color: #E7FD83;
+}
+.tech{
+    font-family:var(--font-articulate-md);
+font-weight: 500;
+font-size: 40px;
+line-height: 120%;
+letter-spacing: 0%;
+color: #E7FD83;
+max-width: 400px;
+}
+.para-div{
+ display: grid;
+ align-items: flex-end;
+ gap: 45px;
+ justify-content: end;
+}
+.para{
+    color: #FFFFFF;
+    font-family: var(--font-manrope) ;
+font-weight: 500;
+font-size: 16px;
+line-height: 135%;
+letter-spacing: 0%;
+max-width: 350px;
+}
+.tag-1::before{
+    left: 57%;
+}
+.tag-1::after{
+    left: 57%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+               /* footer */
+
+.footer-container{
+    
+    background: var(--secondary-bg-color);
+    
+
+}
