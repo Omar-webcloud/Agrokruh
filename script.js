@@ -5,7 +5,7 @@
 const swiper = new Swiper('#vegScroll', {
     loop: true,
     direction: 'vertical',
-    slidesPerView: 5.5,
+    slidesPerView: 5,
     centeredSlides: true,
     mousewheel: {
         forceToAxis: true,
@@ -20,7 +20,7 @@ const swiper = new Swiper('#vegScroll', {
         momentumVelocityRatio: 1,
 
     },
-    spaceBetween: 30,
+    spaceBetween: 40,
     initialSlide: 3,
 });
 
