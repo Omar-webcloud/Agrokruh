@@ -47,7 +47,7 @@ body {
 
 /* Header */
 header {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     width: 100%;
@@ -499,11 +499,11 @@ nav {
     background-color: #FFFFFF;
     transform: scaleX(1);
     transform-origin: left center;
-    animation: disappear-reappear-out 0.8s ease forwards;
+   
 }
 
 .tag:hover::after {
-    animation: disappear-reappear-in 0.8s ease forwards;
+    
 }
 
 @keyframes disappear-reappear-in {
@@ -1464,3 +1464,30 @@ nav {
     justify-content: space-between;
 }
 
+
+
+
+
+/* Vegetable */
+
+
+.vegetable {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 70px 100px 53px 100px;
+}
+.veg-image {
+    position: relative;
+    width: 610px;
+    height: 659px;
+}
+.veg-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 455px;
+    height: 510px;
+    object-fit: contain;
+    display: none;
+    margin-top: 15%;
+}
