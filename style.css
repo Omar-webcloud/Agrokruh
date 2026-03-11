@@ -888,6 +888,8 @@ nav {
     color: var(--font-root-color);
     position: relative;
     text-underline-offset: 5px;
+    position: relative;
+    left: 15px;
 }
 
 .mission-link {
