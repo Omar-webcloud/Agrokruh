@@ -1697,3 +1697,29 @@ nav {
     height: 1px;
     background-color: var(--font-root-color);
 }
+
+
+
+
+
+        /* potato */
+
+.potato{
+        background-image: url('assets/1c06c8aadc3cc841d4f8a57d918f468d610df3c2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+    position: relative; 
+    transition: background-position 0.3s linear;
+}
+
+.potato-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    padding: 70px 100px;
+}

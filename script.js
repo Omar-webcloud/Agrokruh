@@ -1,3 +1,7 @@
+
+
+//vegetables scroll
+
 const swiper = new Swiper('#vegScroll', {
     loop: true,
     direction: 'vertical',
