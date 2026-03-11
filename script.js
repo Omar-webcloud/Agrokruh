@@ -1,45 +1,44 @@
-const vegItems = document.querySelectorAll(".veg-item");
-const vegImages = document.querySelectorAll(".veg-image img");
+const swiper = new Swiper('#vegScroll', {
+    loop: true,
+    direction: 'vertical',
+    slidesPerView: 5.5,
+    centeredSlides: true,
+    mousewheel: {
+        forceToAxis: true,
+        releaseOnEdges: false,
+        sensitivity: 0.5,
 
-function setActive(name){
+    },
+    freeMode: {
+        enabled: true,
+        sticky: true,
+        momentum: true,
+        momentumVelocityRatio: 1,
 
-vegImages.forEach(img=>{
-img.classList.remove("active");
-if(img.dataset.name === name){
-img.classList.add("active");
-}
-});
-
-vegItems.forEach(item=>{
-item.classList.remove("active");
-if(item.dataset.name === name){
-item.classList.add("active");
-}
-});
-
-}
-
-
-// Scroll detection
-
-window.addEventListener("scroll",()=>{
-
-vegItems.forEach(item=>{
-
-const rect = item.getBoundingClientRect();
-
-if(rect.top < window.innerHeight/2 && rect.bottom > window.innerHeight/2){
-
-const name = item.dataset.name;
-setActive(name);
-
-}
-
-});
-
+    },
+    spaceBetween: 30,
+    initialSlide: 3,
 });
 
 
-// default active
+const images = document.querySelectorAll('.veg-image img');
 
-setActive("Tomato");
+
+swiper.on('slideChange', () => {
+
+    const activeSlide = swiper.slides[swiper.activeIndex];
+    const name = activeSlide.dataset.name;
+
+
+    images.forEach(img => {
+        img.classList.toggle('active', img.dataset.name === name);
+    });
+
+
+    swiper.slides.forEach(slide => {
+        slide.classList.toggle('active', slide === activeSlide);
+    });
+});
+
+
+images[0].classList.add('active');
