@@ -887,12 +887,13 @@ nav {
     color: var(--font-root-color);
     position: relative;
     text-underline-offset: 5px;
-    padding-left: 15px;
+    /* padding-left: 15px; */
 }
 
 .mission-link {
     text-decoration: none;
     position: relative;
+    padding-left: 5px;
 }
 
 .mission-link::before {
@@ -912,7 +913,7 @@ nav {
     content: "";
     top: 101%;
     left: -10%;
-    width: 92px;
+    width: 96px;
     height: 1px;
     background-color: var(--font-root-color);
     animation: disappear-reappear-out 0.8s ease forwards;
@@ -1669,12 +1670,18 @@ nav {
     color: var(--font-root-color);
     max-width: 336px;
 }
+.vype .leafy{
+    padding-left: 15px;
+}
+.vype .leafy-3::before, .vype .leafy-3::after{
+    left: 0%;
+}
 
 .leafy-3::before {
     position: absolute;
     content: "";
     top: 30%;
-    left: 0%;
+    left: -3%;
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -1685,7 +1692,7 @@ nav {
     position: absolute;
     content: "";
     top: 100%;
-    left: 0%;
+    left: -3%;
     width: 125px;
     height: 1px;
     background-color: var(--font-root-color);
