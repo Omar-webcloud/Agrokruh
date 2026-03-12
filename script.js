@@ -7,23 +7,28 @@ const swiper = new Swiper('#vegScroll', {
     direction: 'vertical',
     slidesPerView: 5,
     centeredSlides: true,
+    spaceBetween: 40,
+    initialSlide: 3,
+
+    speed: 800,
+
     mousewheel: {
         forceToAxis: true,
-        releaseOnEdges: false,
-        sensitivity: 0.5,
-
+        sensitivity: 1,
     },
+
     freeMode: {
         enabled: true,
         sticky: true,
         momentum: true,
-        momentumVelocityRatio: 1,
-
+        momentumRatio: 0.5,
+        momentumVelocityRatio: 0.6,
+        momentumBounce: false
     },
-    spaceBetween: 40,
-    initialSlide: 3,
-});
 
+    watchSlidesProgress: true,
+    resistanceRatio: 0.85,
+});
 
 const images = document.querySelectorAll('.veg-image img');
 

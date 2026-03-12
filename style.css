@@ -47,7 +47,7 @@ body {
 
 /* Header */
 header {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     width: 100%;
@@ -502,11 +502,11 @@ nav {
     animation: disappear-reappear-out 0.8s ease forwards;
 }
 
-.tag:hover::after {
+/* .tag:hover::after {
     animation: disappear-reappear-in 0.8s ease forwards;
-}
+} */
 
-@keyframes disappear-reappear-in {
+/* @keyframes disappear-reappear-in {
     0% {
         transform: scaleX(1);
         transform-origin: right center;
@@ -523,10 +523,10 @@ nav {
         transform: scaleX(1);
         transform-origin: left center;
     }
-}
+} */
 
 
-@keyframes disappear-reappear-out {
+/* @keyframes disappear-reappear-out {
     0% {
         transform: scaleX(1);
         transform-origin: left center;
@@ -543,7 +543,7 @@ nav {
         transform: scaleX(1);
         transform-origin: right center;
     }
-}
+} */
 
 .btn-divs {
     display: flex;
@@ -880,6 +880,7 @@ nav {
     color: var(--font-root-color);
     position: relative;
     text-underline-offset: 5px;
+    padding-left: 15px;
 }
 
 .mission-link {
@@ -1666,7 +1667,7 @@ nav {
     position: absolute;
     content: "";
     top: 30%;
-    left: -3%;
+    left: 0%;
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -1677,7 +1678,7 @@ nav {
     position: absolute;
     content: "";
     top: 100%;
-    left: -3%;
+    left: 0%;
     width: 125px;
     height: 1px;
     background-color: var(--font-root-color);
@@ -1715,7 +1716,7 @@ nav {
     position: absolute;
     content: "";
     top: 44%;
-    left: 57%;
+    left: 64%;
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -1726,7 +1727,7 @@ nav {
     position: absolute;
     content: "";
     top: 77%;
-    left: 57%;
+    left: 64%;
     width: 112px;
     height: 1px;
     border-radius: 50%;
@@ -1763,6 +1764,13 @@ nav {
     color: var(--font-base-color);
     max-width: 400px;
 }
+.para-div{
+    display: grid;
+    gap: 45px;
+    max-width: 400px;
+    justify-self: right;
+    margin-left: auto;
+}
 
 .para {
     font-family: var(--font-manrope);
@@ -1772,6 +1780,11 @@ nav {
     letter-spacing: 0%;
     color: var(--font-base-color);
     max-width: 350px;
+    text-align: left;
+    justify-self: right;
+}
+.btns{
+    justify-self: left;
     text-align: left;
 }
 
@@ -2090,5 +2103,12 @@ footer {
     left: -10%;
     top: 33%;
 }
+
+
+
+
+
+
+
 
 
