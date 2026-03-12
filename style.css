@@ -2200,11 +2200,15 @@ footer {
         width: 100%;
         justify-content: flex-start;
     }
+    .scroll-card{
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 @media (max-width: 775px) {
     .logo-wrapper{
-        padding-left: 10px;
+        padding-left: 18px;
     }
     .nav-toggle {
         display: block;
@@ -2277,7 +2281,7 @@ footer {
         height: max-content;
         align-items: center;
         justify-content: center;
-        padding: 10px;
+        padding: 18px;
     }
     .title-div{
         margin-top: 230px;
@@ -2294,6 +2298,16 @@ footer {
           padding-right: 0;
     }
     .btn-divs a{
+        font-size: 14px;
+    }
+    .efectiv-container, .technologia-container{
+        gap: 25px;
+        padding: 18px;
+    }
+    .scroll-title, .tech-card-title{
+        font-size: 28px;
+    }
+    .nasa-description{
         font-size: 14px;
     }
 }
