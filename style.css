@@ -2213,7 +2213,7 @@ footer {
     }
 }
 
-@media (max-width: 775px) {
+@media (max-width: 790px) {
     .logo-wrapper{
         padding-left: 18px;
     }
@@ -2320,6 +2320,23 @@ footer {
     .pre-a , .pre-c{
         font-size: 14px;
     }
+    .leafy-title-div{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .leafy-con{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .leaf-img{
+        width: 100%;
+    }
+    .regenerate{
+        font-size: 20px;
+    }
+    .pestu{
+        font-size: 28px;
+    }
 }
 
 @media (max-width:576px) {
@@ -2332,6 +2349,28 @@ footer {
     }
     .btn-divs a{
         font-size: 12px;
+    }
+    .nasa{
+        padding: 15px;
+    }
+    .regenerate{
+        font-size: 12px;
+    }
+     .regenerate-item-2::before, .regenerate-item-3::before {
+       top: -1%;
+       left: -16%;
+    }
+    .regenerate-item-1::after{
+      right: -13%;
+    top: 9%;
+    }
+    .pestu{
+        font-size: 24px;
+    }
+    .vdaka{
+        margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 14px;
     }
 }
 
