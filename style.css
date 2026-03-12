@@ -288,6 +288,13 @@ nav {
     padding: 13px 22.41px;
     border-radius: 30px;
 
+
+}
+.lang-switch a{
+    font-family: var(--font-manrope);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .nav-item a {
