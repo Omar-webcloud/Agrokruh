@@ -2204,6 +2204,13 @@ footer {
         flex-direction: column;
         gap: 20px;
     }
+    .nasa{
+        flex-direction: column;
+    }
+     .pre{
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 @media (max-width: 775px) {
@@ -2300,7 +2307,7 @@ footer {
     .btn-divs a{
         font-size: 14px;
     }
-    .efectiv-container, .technologia-container{
+    .efectiv-container, .technologia-container, .nasa-container{
         gap: 25px;
         padding: 18px;
     }
@@ -2308,6 +2315,9 @@ footer {
         font-size: 28px;
     }
     .nasa-description{
+        font-size: 14px;
+    }
+    .pre-a , .pre-c{
         font-size: 14px;
     }
 }
