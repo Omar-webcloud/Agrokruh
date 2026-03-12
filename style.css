@@ -2144,6 +2144,9 @@ footer {
         width: 100%;
         left: 50%
      }
+     .tech-btn-wrap{
+        flex-wrap: wrap;
+     }
 }
 
 @media (max-width:1020px) {
@@ -2410,6 +2413,14 @@ footer {
         width: 100%;
                     height: auto;
     }
-    
+    .tech-scroll-card{
+        gap: 15px;
+    }
+    .ag-vel{
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        align-items: flex-end;
+    }
 }
 
