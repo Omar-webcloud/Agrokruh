@@ -1133,6 +1133,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 15px;
 }
 
 .image-seventy {
@@ -2130,6 +2131,20 @@ footer {
 .nav-toggle {
     display: none;
 }
+@media (max-width: 1250px) {
+    .arrow-div{
+        right: 0%;
+    bottom: 2%;
+    width: 100%;
+    }
+    .image-seventy {
+    padding-left: 0px;
+}
+     .cust-bullet{
+        width: 100%;
+        left: 50%
+     }
+}
 
 @media (max-width:1020px) {
     .logo-wrapper{
@@ -2307,7 +2322,7 @@ footer {
     .btn-divs a{
         font-size: 14px;
     }
-    .efectiv-container, .technologia-container, .nasa-container{
+    .efectiv-container, .technologia-container, .nasa-container, .twenty-four-container{
         gap: 25px;
         padding: 18px;
     }
@@ -2337,8 +2352,27 @@ footer {
     .pestu{
         font-size: 28px;
     }
+    
+    .twenty-four{
+        padding-left: 10px;
+    }
+    .img-content-div{
+        flex-direction: column;
+    }
+    .image-seventy{
+        padding: 0;
+    }
+    .cust-bullet{
+            bottom: 0.8%;
+    width: 100%;
+    left: 48%;
+    }
+    .arrow-div{
+        bottom: 2.5%;
+        width: 100%;
+        left: -30px;
 }
-
+}
 @media (max-width:576px) {
     .btn-divs{
         gap: 35px;
@@ -2372,5 +2406,10 @@ footer {
     margin-bottom: 15px;
     font-size: 14px;
     }
+    .image-seventy, .content-div{
+        width: 100%;
+                    height: auto;
+    }
+    
 }
 
