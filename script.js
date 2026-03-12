@@ -51,3 +51,15 @@ swiper.on('slideChange', () => {
 
 
 images[0].classList.add('active');
+
+
+
+//nav-toggle
+
+
+const navToggle = document.getElementById('nav-toggle');
+const navItems = document.querySelector('.nav-items');
+
+navToggle.addEventListener('click', () => {
+    navItems.classList.toggle('active');
+});
