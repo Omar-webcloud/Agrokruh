@@ -71,6 +71,31 @@ document.addEventListener("DOMContentLoaded", () => {
   startAutoFlick();
 });
 
+
+
+
+//regenerate-item animation
+
+document.addEventListener("DOMContentLoaded", () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  const leafContainer = document.querySelector('.leaf-container');
+  if (leafContainer) {
+    observer.observe(leafContainer);
+  }
+});
+
+
+
+
+
+
 // Techscroll
 document.addEventListener("DOMContentLoaded", () => {
   const track = document.querySelector(".tech-scroll-track");
@@ -236,4 +261,6 @@ window.addEventListener("wheel", (e) => {
 
   potato.style.backgroundPosition = `center calc(50% + ${offsetY}px)`;
 });
+
+
 
