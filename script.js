@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", () => {
   startAutoFlick();
 });
 
-// Carousel
+//24 Carousel
 document.addEventListener("DOMContentLoaded", () => {
   const track = document.querySelector(".slide-track");
   const slides = Array.from(track.children);
@@ -202,23 +202,27 @@ const swiper = new Swiper('#vegScroll', {
   direction: 'vertical',
   slidesPerView: 5,
   centeredSlides: true,
-  spaceBetween: 40,
+  spaceBetween: 30,
   initialSlide: 3,
 
-  speed: 800,
+  speed: 300,
+
+    touchRatio: 1.5,  
 
   mousewheel: {
     forceToAxis: true,
     sensitivity: 1,
+    releaseOnEdges: true,
   },
 
   freeMode: {
     enabled: true,
     sticky: true,
     momentum: true,
-    momentumRatio: 0.5,
-    momentumVelocityRatio: 0.6,
-    momentumBounce: false
+    momentumRatio: 0.9,
+    momentumVelocityRatio: 0.9,
+    momentumBounce: false,
+    minimumVelocity: 0.02
   },
 
   watchSlidesProgress: true,
