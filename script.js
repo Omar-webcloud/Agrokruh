@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-//regenerate-item animation
+//regenerate-item 
 
 document.addEventListener("DOMContentLoaded", () => {
   const observer = new IntersectionObserver((entries) => {
@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
     interval = setInterval(() => {
       current = (current + 1) % totalSlides;
       showSlide(current);
-    }, 2000);
+    }, 3000);
   }
 
   function stopAutoFlick() {
