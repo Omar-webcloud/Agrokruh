@@ -1381,6 +1381,7 @@ nav {
     color: var(--font-root-color);
 
     transition: all .10s ease-in-out;
+    overflow-wrap: break-word;
 }
 
 .tech-btn-wrap {
