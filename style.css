@@ -508,51 +508,34 @@ nav {
     background-color: #FFFFFF;
     transform: scaleX(1);
     transform-origin: left center;
-    animation: disappear-reappear-out 0.8s ease forwards;
+    transition: ease-in-out 0.5s;
 }
 
-/* .tag:hover::after {
-    animation: disappear-reappear-in 0.8s ease forwards;
-} */
+.tag:hover::after , .tag:hover::before{
+   background-color: #E7FD83;
+    transition: ease-in-out 0.5s;
+}
+.btn:hover, .zistit:hover {
+    transform: scale(0.96);
+    transition: ease-in-out 0.5s;
+}
+.btn:hover::before{
+    background-color: #CED2BB;
+    transition: ease-in-out 0.5s;
+}
 
-/* @keyframes disappear-reappear-in {
-    0% {
-        transform: scaleX(1);
-        transform-origin: right center;
-    }
-    30% {
-        transform: scaleX(0);
-        transform-origin: right center;
-    }
-    31% {
-        transform: scaleX(0);
-        transform-origin: left center;
-    }
-    70%, 100% {
-        transform: scaleX(1);
-        transform-origin: left center;
-    }
-} */
+.lang-sk:hover{
+    color: #CED2BB;
+     background-color: #000;
+    border-radius: 30%;
+    transition: ease-in-out 0.4s;
+}
+.lang-en:hover{
+    background-color: #000;
+    border-radius: 30%;
+    transition: ease-in-out 0.4s;
+}
 
-
-/* @keyframes disappear-reappear-out {
-    0% {
-        transform: scaleX(1);
-        transform-origin: left center;
-    }
-    30% {
-        transform: scaleX(0);
-        transform-origin: left center;
-    }
-    31% {
-        transform: scaleX(0);
-        transform-origin: right center;
-    }
-    70%, 100% {
-        transform: scaleX(1);
-        transform-origin: right center;
-    }
-} */
 
 .btn-divs {
     display: flex;
@@ -2130,11 +2113,12 @@ footer {
     position: absolute;
     left: -10%;
     top: 101%;
-    animation: disappear-reappear-out 2s ease forwards;
+  
 }
 
 .footer-bottom a:hover::after {
-    animation: disappear-reappear-in 2s ease forwards;
+    background-color: #E7FD83;
+    transition: ease-in-out 0.4s;
 }
 
 
@@ -2149,9 +2133,19 @@ footer {
     top: 33%;
 }
 
-
-
-
+.en:hover{
+    color: #ffffff;
+    transition: ease-in-out 0.4s;
+}
+.icons a:hover{
+    transform: scale(0.97);
+    background-color: #ffffff;
+    transition: ease-in-out 0.4s;
+}
+.send-btn:hover::before{
+    transform: scale(0.7);
+    transition: ease-in-out 0.4s;
+}
 
 
 
