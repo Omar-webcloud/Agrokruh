@@ -1865,6 +1865,8 @@ footer {
 .footer-2 {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 
 }
 
@@ -2158,6 +2160,7 @@ footer {
         padding-top: 30px;
         flex-wrap: nowrap;
         justify-content: space-between;
+        align-items: center;
     }
     .veg-image {
         width: 35%;
@@ -2180,7 +2183,7 @@ footer {
     }
     .head-veg::before {
         max-width: 100%;
-        bottom: 250px;
+        bottom: 385px;
     }
     .scroll-name {
         font-size: 22px;
@@ -2221,6 +2224,7 @@ footer {
     }
     .head-veg::before {
         bottom: 200px;
+        display: none;
     }
     .swiper {
         height: 300px;
@@ -2406,7 +2410,7 @@ footer {
     .btn-divs a{
         font-size: 14px;
     }
-    .efectiv-container, .technologia-container, .nasa-container, .twenty-four-container{
+    .efectiv-container, .technologia-container, .nasa-container, .twenty-four-container , .footer-container{
         gap: 25px;
         padding: 18px;
     }
@@ -2594,9 +2598,17 @@ footer {
     }
 }
 
-@media (max-width: 504px) {
+@media (max-width: 536px) {
     .potato {
         height: auto;
         min-height: 700px;
+    }
+    .custom-bullet{
+        width: 55px;
+    }
+}
+@media (max-width:1174px) {
+    .footer-2{
+        justify-content: center;
     }
 }

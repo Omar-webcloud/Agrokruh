@@ -1,3 +1,13 @@
+//nav-toggle
+
+
+const navToggle = document.getElementById('nav-toggle');
+const navItems = document.querySelector('.nav-items');
+
+navToggle.addEventListener('click', () => {
+    navItems.classList.toggle('active');
+});
+
 
 
 //vegetables scroll
@@ -9,7 +19,7 @@ const swiper = new Swiper('#vegScroll', {
     centeredSlides: true,
     spaceBetween: 40,
     initialSlide: 3,
-
+    
     speed: 800,
 
     mousewheel: {
@@ -54,12 +64,3 @@ images[0].classList.add('active');
 
 
 
-//nav-toggle
-
-
-const navToggle = document.getElementById('nav-toggle');
-const navItems = document.querySelector('.nav-items');
-
-navToggle.addEventListener('click', () => {
-    navItems.classList.toggle('active');
-});
