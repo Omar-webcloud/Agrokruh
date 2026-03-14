@@ -1863,6 +1863,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+        gap: 10px;
 }
 
 .footer-col {
@@ -2616,6 +2617,9 @@ footer {
     .footer-container {
         padding: 40px 20px;
         gap: 40px;
+    }
+    .footer-col a{
+        font-size: 14px;
     }
 
     .footer-2,

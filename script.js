@@ -204,10 +204,7 @@ const swiper = new Swiper('#vegScroll', {
   centeredSlides: true,
   spaceBetween: 30,
   initialSlide: 3,
-
-  speed: 300,
-
-    touchRatio: 1.5,  
+  speed: 100,
 
   mousewheel: {
     forceToAxis: true,
@@ -217,23 +214,20 @@ const swiper = new Swiper('#vegScroll', {
 
   freeMode: {
     enabled: true,
-    sticky: true,
-    momentum: true,
-    momentumRatio: 0.9,
-    momentumVelocityRatio: 0.9,
-    momentumBounce: false,
-    minimumVelocity: 0.02
+    sticky: true,           
+    momentum: false,        
+    momentumBounce: false,  
   },
 
   watchSlidesProgress: true,
   resistanceRatio: 0.85,
 });
 
+
 const images = document.querySelectorAll('.veg-image img');
 
 
 swiper.on('slideChange', () => {
-
   const activeSlide = swiper.slides[swiper.activeIndex];
   const name = activeSlide.dataset.name;
 
@@ -242,7 +236,7 @@ swiper.on('slideChange', () => {
     img.classList.toggle('active', img.dataset.name === name);
   });
 
-
+ 
   swiper.slides.forEach(slide => {
     slide.classList.toggle('active', slide === activeSlide);
   });
@@ -250,7 +244,6 @@ swiper.on('slideChange', () => {
 
 
 images[0].classList.add('active');
-
 
 
 // Parallax
@@ -269,6 +262,3 @@ window.addEventListener("wheel", (e) => {
 
   potato.style.backgroundPosition = `center calc(50% + ${offsetY}px)`;
 });
-
-
-
